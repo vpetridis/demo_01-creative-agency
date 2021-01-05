@@ -4,7 +4,9 @@ This is a <strong>demo</strong> single page site. It is a design challenge from 
 
 # Practice makes better
 
-I tried to be as clean and well structured with my code as possible. 
-Since there is not much interactivity on the site, I worked extensively on my CSS classes.
+- Make it as DRY and as well structured as possible.
+- Investigate the mockup and built the page without any guidelines.
+- Create meaningful CSS class names.
+- Use mostly Flexbox and Grid
 
-
+<em>P.S. Since there is not much interactivity on the site, I worked mostly on the CSS.</em>
