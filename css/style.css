@@ -231,6 +231,17 @@ footer {
   display: grid;
   place-items: center;
   padding: 10%;
+  position: relative;
+}
+.call-to-action .svg-logo {
+  background: url(/assets/brand-logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  left: -10%;
+  top: 30%;
 }
 .section__details span {
   color: var(--clr-brand);
@@ -301,7 +312,6 @@ footer {
   font-size: var(--fs-subtitle);
   margin-top: 1em;
   cursor: pointer;
-  
 }
 .section__details .branding-img {
   color: var(--clr-light);
@@ -311,6 +321,17 @@ footer {
   align-items: flex-end;
   padding-right: 4em;
   padding-bottom: 2.5em;
+  position: relative;
+}
+.branding-img .svg-logo {
+  background: url(/assets/brand-logo-white.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 100%;
+  position: absolute;
+  left: -10%;
+  top: 30%;
 }
 /* =================================================================
                         STYLING FOOTER
@@ -319,16 +340,15 @@ footer {
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  place-items: center
-  ;
+  place-items: center;
 }
 footer h2 {
-    margin-left: 5%;
-    color: var(--clr-dark);
+  margin-left: 13%;
+  color: var(--clr-dark);
 }
 footer button {
-    width: fit-content;
-    height: fit-content;
+  width: fit-content;
+  height: fit-content;
 
   border: none;
   padding: 1em;
