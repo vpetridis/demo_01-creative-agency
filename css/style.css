@@ -292,15 +292,13 @@ footer {
 }
 
 .section__details .listing-details h3 {
-  display: inline;
-  position: relative;
-  left: -18%;
+margin-bottom: .5em;
 }
 .section__details .listing-item span {
   display: inline;
   position: relative;
-  top: -12px;
-  left: -50px;
+  top: 60px;
+  left: -56px;
   z-index: 5;
   opacity: 0.4;
   font-size: calc(var(--fs-title) + 1rem);
@@ -434,11 +432,10 @@ footer button {
                             MOBILE
                         *************/
 @media (max-width: 600px) {
-
-    /* TYPOGRAPHY */
+  /* TYPOGRAPHY */
   :root {
     --fs-title: 3.7rem;
-    --fs-subtitle: 2.6rem;
+    --fs-subtitle: 2.3rem;
     --fs-primary: 1.35rem;
     --fs-btn: 1rem;
     --fw-title: 900;
@@ -459,7 +456,7 @@ footer button {
     height: 20vh;
   }
   .nav__logo {
-      padding: 5%;
+    padding: 5%;
   }
   .nav__navbar {
     display: none;
@@ -481,6 +478,7 @@ footer button {
     display: block;
     object-fit: cover;
     width: 100%;
+    height: 70vh;
   }
 
   .section__details .details-img {
@@ -493,16 +491,19 @@ footer button {
   }
   .section__details .call-to-action {
     grid-column: 5/9;
-    height: 50vh;
+    height: 70vh;
+    padding: 5%;
     background-color: var(--clr-dark);
   }
   .section__details .approach {
     grid-column: 1/-1;
-    height: 35vh;
+    height: 45vh;
     width: 100%;
     position: relative;
+    display: grid;
+    place-items: center;
     left: 0;
-    top:0;
+    top: 0;
     padding: 5%;
     z-index: 20;
     color: var(--clr-light);
@@ -511,8 +512,16 @@ footer button {
   .section__details .listing-details {
     grid-column: 4/9;
     grid-row: span 5;
+    justify-content: center;
     background-color: var(--clr-brand);
-    padding: 12%;
+    padding: 10%;
+    top: -5%;
+    padding: 5%;;
+    padding-left: 8%;
+    padding-right: 2%;
+  }
+  .section__details .listing-item span{
+      left: -5%;
   }
   .section__details .naming {
     grid-column: 1/5;
@@ -529,5 +538,20 @@ footer button {
       ),
       url("/assets/branding-img.jpg");
     background-size: cover;
+  }
+  footer{
+      width:100%;
+      margin-top: 5%;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+      align-items: center;
+    }
+    footer h2{
+        margin-left:0 ;
+        padding: 5%;
+    }
+    footer button{
+      justify-self: center;
+
   }
 }
