@@ -128,7 +128,7 @@ nav {
 .section__details .details-img {
   grid-column: 1/6;
   grid-row: 1/5;
-  background: url("../assets/details-img.jpg);
+  background: url("../assets/details-img.jpg");
   background-size: cover;
 }
 .section__details .call-to-action {
